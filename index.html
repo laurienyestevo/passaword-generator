@@ -19,28 +19,28 @@
                 <ul>
                     <li>
                         <h2>Use numbers</h2>
-                        <label class="switch">
+                        <label class="switch" aria-label="checkbox">
                             <input type="checkbox"name= "numbers" id="switch-numbers">
-                            <span class="slider"></span>
+                            <span class="slider"  role="checkbox" aria-checked="true" tabindex="0"></span>
                         </label>
                     </li>
                     <li>
                         <h2>Use capital letters</h2>
-                        <label class="switch">
-                            <input type="checkbox"name= "capital-letters" id="switch-capital-letters">
-                            <span class="slider"></span>
+                        <label class="switch" aria-label="checkbox">
+                            <input type="checkbox" name="capital-letters" id="switch-capital-letters">
+                            <span class="slider" role="checkbox" aria-checked="true" tabindex="0"></span>
                         </label>
                     </li>
                     <li>
                         <h2>Use special characters</h2>
-                        <label class="switch">
-                            <input type="checkbox"name= "special-characters" id="switch-special-characters">
-                            <span class="slider"></span>
+                        <label class="switch" aria-label="checkbox">
+                            <input type="checkbox"name= "special-characters" id="switch-special-characters" >
+                            <span class="slider"role="checkbox" aria-checked="true" tabindex="0"></span>
                         </label>
                     </li>
                 </ul>
                 <div class="group-btn">
-                    <button type="button" onclick="handleClickGenerateBtn()" class="generate-btn"> Generate </button>
+                    <button type="button" onclick="handleClickGenerateBtn()" class="generate-btn" > Generate </button>
                     <button type="button" onclick="handleClickCopyBtn()" class="copy-btn">Copy</button>
                 </div>
             </form>

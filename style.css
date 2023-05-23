@@ -1,13 +1,12 @@
 :root{
     --background: #2e2d2d;
-    --green-500: #1d887a;
+    --green-500: #17E8C2;
     --white: #ffffff;
+    --black:#000000;
     --gray-200: #c7c7c7;
     --gray-600: #474747;
     --gray-700: #3b3b3b;
-    --copy-btn-border-color: #5fa0c3;
     --copy-btn-background: #3e5460;
-    --copy-btn-text-color: #7acbf7;
 }
 *{
 border: 0;
@@ -144,10 +143,11 @@ button:hover{
 .copy-btn{
     width: 50%;
     background-color: var(--copy-btn-background);
-    border: 1px solid var(--copy-btn-border-color);
-    color: var(--copy-btn-text-color);
+    border: 1px solid var(--white);
+    color: var(--white);
 }
 .generate-btn{
+    color: var(--black);
     background-color: var(--green-500);
     width: calc(50% - 16px);
 }
