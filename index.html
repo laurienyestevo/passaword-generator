@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <section class="password-generation">
+            <h1>Password Generator</h1>
+            <form action="#">
+                <div class="form-input">
+                    <label for="input-password">Password</label>
+                    <input type="text" id="input-password" disabled>
+                </div>
+                <ul>
+                    <li>
+                        <h2>Use numbers</h2>
+                        <label class="switch">
+                            <input type="checkbox"name= "numbers" id="switch-numbers">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <h2>Use capital letters</h2>
+                        <label class="switch">
+                            <input type="checkbox"name= "capital-letters" id="switch-capital-letters">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <h2>Use special characters</h2>
+                        <label class="switch">
+                            <input type="checkbox"name= "special-characters" id="switch-special-characters">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+                <div class="group-btn">
+                    <button type="button" onclick="handleClickGenerateBtn()" class="generate-btn"> Generate </button>
+                    <button type="button" onclick="handleClickCopyBtn()" class="copy-btn">Copy</button>
+                </div>
+            </form>
+            <script src="/script.js"></script>
+        </section>
+    
+</body>
+</html>
